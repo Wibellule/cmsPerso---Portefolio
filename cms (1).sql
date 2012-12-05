@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mar 04 Décembre 2012 à 21:25
+-- Généré le: Mer 05 Décembre 2012 à 21:28
 -- Version du serveur: 5.5.24-log
 -- Version de PHP: 5.4.3
 
@@ -33,6 +33,30 @@ CREATE TABLE IF NOT EXISTS `configs` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_UNIQUE` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `datas`
+--
+
+CREATE TABLE IF NOT EXISTS `datas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `birthday` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `website` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `datas`
+--
+
+INSERT INTO `datas` (`id`, `name`, `firstname`, `birthday`, `address`, `email`, `website`) VALUES
+(1, 'CORNU', 'Guillaume', '10 Septembre, 1988', '219, rue de saint hilaire', 'gyome34@hotmail.com', 'www.wibellule.com');
 
 -- --------------------------------------------------------
 
